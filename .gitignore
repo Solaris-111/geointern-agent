@@ -1,0 +1,116 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# === 版权/隐私 — 绝对不能公开 ===
+# 实习指导书PDF（版权）
+references/rag/guidebook/*.pdf
+references/rag/textbook/*.pdf
+
+# 往年野簿全文（他人隐私）
+周口店野簿_学习版.md
+周口店野外实习野簿.md
+周口店野外实习野簿_预稿.md
+field_notebooks/
+
+# RAG 索引（从版权PDF生成，派生内容同样受保护）
+references/rag/index/chunks.json
+references/rag/page_images/
+
+# 往年报告全文（他人隐私）
+预制报告/
+
+# OCR转录（他人野簿的转录）
+temp_notebook_pages/
+output/day1_transcripts/
+
+# 指导书页码/附件转录（版权派生）
+output/zk_p*.md
+output/zhoukoudian_p*.md
+野簿格式_ocr.txt
+野簿格式_small.jpg
+
+# API密钥
+*_token*
+*.env
+
+# === 私人文件/素材（个人工作材料，非项目代码）===
+识图素材/
+散文_翻山越岭的日子.md
+翻山越岭的日子.docx
+翻山越岭的日子.pdf
+暑期专业实习每日记录.pptx
+野簿格式_converted.png
+实习报告要求/
+
+# === 本地工具配置 ===
+.serena/
+
+# === 外部下载内容（无需入仓） ===
+gemgis_tutorials/
+references/rag/tessdata/
+
+# === QGIS MCP（独立子项目，有自己的 git 仓库，需单独 clone） ===
+mcp_qgis/
+
+# === 临时生成 ===
+temp_downloads/
+*.tmp
+playwright-mcp/
+.playwright-mcp/
+*_temp_*.csv
+*_temp_*.png
+temp_guidebook_*
+temp_docx_media/
+temp_guide_pages/
+temp_ppt_assets/
+temp_ppt_render/
+temp_report_pages_jpg/
+
+# === 输出文件 — 只保留精选demo，其余忽略 ===
+# 如需保留特定输出，用 git add -f 强制添加
+output/*.png
+output/*.jpg
+output/*.kml
+output/*.csv
+output/*.json
+output/sketches/
+output/sketch_test/
+!output/demo_*.png
+!output/demo_*.jpg
+
+# === 二进制中间产物（CAD处理/调试输出，可再生成）===
+*.dxf
+*.dwg
+*.dwl
+*.dwl2
+*.asc
+potrace.exe
+dxf_*.png
+dxf_*.json
+zhoukoudian-*.png
+webmap_verify*.png
+terrain-check.png
+comparison.png
+1_enhanced.png
+cad-example-screenshot.png
+reference_section_sample.png
+L03_section_new.png
+references/rag/test_section.png
+references/rag/test_section2.png
+output/compare.html
+output/L03_prep/
+
+# === 野簿预稿 — 保留框架模板，实际填了数据的除外 ===
+*.bak

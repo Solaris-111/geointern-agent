@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>L08 房山侵入体及接触关系观察</name>
+  <description>房山岩体本体观察路线（探矿所→一条龙→127.2高地→官地村→探矿所）</description>
+
+  <Style id="point_style">
+    <IconStyle><scale>1.0</scale>
+      <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><scale>1.0</scale></LabelStyle>
+  </Style>
+  <Style id="contact_style">
+    <IconStyle><scale>1.1</scale>
+      <Icon><href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><scale>1.0</scale></LabelStyle>
+  </Style>
+  <Style id="line_style">
+    <LineStyle><color>ff0000ff</color><width>3</width></LineStyle>
+  </Style>
+
+  <Folder>
+    <name>观察点</name>
+
+    <Placemark>
+      <name>D0801 侵入接触关系</name>
+      <styleUrl>#contact_style</styleUrl>
+      <description><![CDATA[
+        <b>点性：</b>花岗闪长岩与铁岭组侵入接触关系<br>
+        <b>看点：</b>岩枝/岩床侵入形态 + 烘烤边 + 冷凝边 + 硅灰石/透闪石大理岩<br>
+        <b>任务：</b>画1:50接触关系素描图<br>
+        <b>高程：</b>138m
+      ]]></description>
+      <Point><coordinates>115.932750,39.704167,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>D0802 原生构造</name>
+      <styleUrl>#point_style</styleUrl>
+      <description><![CDATA[
+        <b>点性：</b>官地单元石英闪长岩岩性及原生构造观察<br>
+        <b>看点：</b>流面43°∠69° + 流线310°∠61° + 三组原生节理 + 暗色微粒包体 + 捕虏体<br>
+        <b>任务：</b>画暗色微粒包体素描图<br>
+        <b>高程：</b>135m
+      ]]></description>
+      <Point><coordinates>115.928611,39.707778,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>D0803 岩脉穿插</name>
+      <styleUrl>#point_style</styleUrl>
+      <description><![CDATA[
+        <b>点性：</b>多期岩脉岩体、岩脉形成顺序观察<br>
+        <b>看点：</b>花岗闪长岩→石英闪长岩→粗粒长英岩脉→花岗细晶岩脉（早→晚）<br>
+        <b>任务：</b>画岩脉穿插关系素描图<br>
+        <b>高程：</b>151m
+      ]]></description>
+      <Point><coordinates>115.929722,39.708556,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>D0804 岩控点+蘑菇石</name>
+      <styleUrl>#point_style</styleUrl>
+      <description><![CDATA[
+        <b>点性：</b>东山口单元中粒花岗闪长岩岩控点 + 风化景观<br>
+        <b>看点：</b>捕虏体（斜长角闪岩/矽卡岩等）+ 蘑菇石/蛤蚂石 + 球状风化<br>
+        <b>任务：</b>画蘑菇石素描图<br>
+        <b>高程：</b>—
+      ]]></description>
+      <Point><coordinates>115.944694,39.708139,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>D0805 单元分界</name>
+      <styleUrl>#point_style</styleUrl>
+      <description><![CDATA[
+        <b>点性：</b>东山口单元与官地单元分界点<br>
+        <b>看点：</b>两种岩性对比 + 伟晶岩侵入石英闪长岩 + 冷凝边<br>
+        <b>任务：</b>画伟晶岩侵入素描图<br>
+        <b>高程：</b>120m
+      ]]></description>
+      <Point><coordinates>115.944333,39.707583,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>D0806 过渡关系</name>
+      <styleUrl>#point_style</styleUrl>
+      <description><![CDATA[
+        <b>点性：</b>石英闪长岩与花岗闪长岩过渡关系<br>
+        <b>看点：</b>暗色条带 + 包体带 + 矿物定向平行接触界线<br>
+        <b>高程：</b>110m
+      ]]></description>
+      <Point><coordinates>115.945528,39.707528,0</coordinates></Point>
+    </Placemark>
+
+    <Placemark>
+      <name>D0807 过渡相</name>
+      <styleUrl>#point_style</styleUrl>
+      <description><![CDATA[
+        <b>点性：</b>房山岩体过渡相岩性控制点<br>
+        <b>看点：</b>花岗闪长岩→二长花岗岩过渡，斜长石↑钾长石↓<br>
+        <b>高程：</b>105m
+      ]]></description>
+      <Point><coordinates>115.945306,39.712000,0</coordinates></Point>
+    </Placemark>
+
+  </Folder>
+
+  <Folder>
+    <name>路线轨迹</name>
+    <Placemark>
+      <name>L08 路线</name>
+      <styleUrl>#line_style</styleUrl>
+      <LineString>
+        <tessellate>1</tessellate>
+        <coordinates>
+          115.928611,39.707778,0
+          115.929722,39.708556,0
+          115.932750,39.704167,0
+          115.944694,39.708139,0
+          115.944333,39.707583,0
+          115.945528,39.707528,0
+          115.945306,39.712000,0
+        </coordinates>
+      </LineString>
+    </Placemark>
+  </Folder>
+
+</Document>
+</kml>

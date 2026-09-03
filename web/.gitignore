@@ -1,0 +1,5 @@
+.env
+deploy.py
+setup_nginx.py
+__pycache__/
+*.pyc

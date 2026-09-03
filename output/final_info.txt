@@ -1,0 +1,23 @@
+DXF: d:/geointern-agent/output/fig2-1_v3.dxf
+Profile: 176m
+Elevation: 155-219m
+Scale: 4.95 px/m (from '20 40m' scale bar)
+Azimuth: 60.0 deg
+
+Apparent dips:
+  Jxw: true 16 -> apparent 15.1
+  Jxh: true 20 -> apparent 19.7
+  Jxt1: true 22 -> apparent 22.0
+  Jxt2: true 20 -> apparent 19.9
+  Jxt3: true 20 -> apparent 19.7
+  Qbx: true 20 -> apparent 20.0
+  Qbc: true 18 -> apparent 17.7
+
+Formations:
+  Jxw at x=0m, limestone
+  Jxh at x=26m, slate
+  Jxt1 at x=53m, dolomite
+  Jxt2 at x=79m, limestone
+  Jxt3 at x=105m, slate
+  Qbx at x=132m, shale
+  Qbc at x=158m, conglomerate

@@ -1,0 +1,2 @@
+DXF saved: d:/geointern-agent/output/fig2-1_section.dxf
+Open with AutoCAD / LibreCAD / QGIS

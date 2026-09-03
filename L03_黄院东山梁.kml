@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>L03 黄院东山梁</name>
+  <description>周口店实习路线3：下古生界地层观察 p86-87</description>
+
+  <Style id="routeStyle">
+    <LineStyle><color>ff0000ff</color><width>3</width></LineStyle>
+  </Style>
+  <Style id="pointStyle">
+    <IconStyle><scale>1.2</scale>
+      <Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><scale>1.1</scale></LabelStyle>
+  </Style>
+  <Style id="keyPointStyle">
+    <IconStyle><scale>1.4</scale>
+      <Icon><href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle><scale>1.2</scale><color>ff0000ff</color></LabelStyle>
+  </Style>
+
+  <Placemark>
+    <name>L03 行进路线</name>
+    <styleUrl>#routeStyle</styleUrl>
+    <LineString><tessellate>1</tessellate><coordinates>
+115.905833,39.692499999999995,0
+115.9075,39.686388888888885,0
+115.90777777777778,39.6875,0
+115.90833333333335,39.68833333333333,0
+115.90833333333335,39.68861111111111,0
+115.90833333333335,39.689166666666665,0
+115.91000000000001,39.69166666666666,0
+115.91000000000001,39.69222222222222,0
+115.91027777777778,39.69305555555555,0
+</coordinates></LineString></Placemark>
+
+  <Placemark>
+    <name>D0301 QbC岩性控制点</name>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.905833,39.692499999999995,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>D0302 QbC/QxJ界线</name>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.9075,39.686388888888885,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>D0303 QxJ/∈₁f界线 ⚠️平行不整合</name>
+    <styleUrl>#keyPointStyle</styleUrl>
+    <Point><coordinates>115.90777777777778,39.6875,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>D0304 ∈₁f/∈₁₊₂m界线</name>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.90833333333335,39.68833333333333,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>D0305 ∈₁₊₂m/∈₂x界线</name>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.90833333333335,39.68861111111111,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>D0306 ∈₂x/∈₂z界线</name>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.90833333333335,39.689166666666665,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>D0307 ∈₂z/∈₂h界线</name>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.91000000000001,39.69166666666666,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>D0308 ∈₂h/O₁y界线</name>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.91000000000001,39.69222222222222,0</coordinates></Point>
+  </Placemark>
+  <Placemark>
+    <name>D0309 O₁y/O₁l界线</name>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.91027777777778,39.69305555555555,0</coordinates></Point>
+  </Placemark>
+</Document>
+</kml>

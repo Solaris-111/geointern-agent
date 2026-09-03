@@ -1,0 +1,15 @@
+{
+  "mcpServers": {
+    "qgis": {
+      "command": "uv",
+      "args": [
+        "--directory",
+        "D:\\geointern-agent\\mcp_qgis",
+        "run",
+        "python",
+        "-m",
+        "src.mcp_qgis.server"
+      ]
+    }
+  }
+}

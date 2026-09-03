@@ -1,0 +1,194 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.905833,
+          39.692499999999995,
+          0.0
+        ]
+      },
+      "properties": {
+        "name": "D0301 QbC岩性控制点",
+        "point_id": "D0301",
+        "description": "QbC岩性控制点",
+        "key": false,
+        "route": "L03 黄院东山梁",
+        "lng": 115.905833,
+        "lat": 39.692499999999995,
+        "ele": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.9075,
+          39.686388888888885,
+          0.0
+        ]
+      },
+      "properties": {
+        "name": "D0302 QbC/QxJ界线",
+        "point_id": "D0302",
+        "description": "QbC/QxJ界线",
+        "key": false,
+        "route": "L03 黄院东山梁",
+        "lng": 115.9075,
+        "lat": 39.686388888888885,
+        "ele": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.90777777777778,
+          39.6875,
+          0.0
+        ]
+      },
+      "properties": {
+        "name": "D0303 QxJ/∈₁f界线 ⚠️平行不整合",
+        "point_id": "D0303",
+        "description": "QxJ/∈₁f界线 ⚠️平行不整合",
+        "key": true,
+        "route": "L03 黄院东山梁",
+        "lng": 115.90777777777778,
+        "lat": 39.6875,
+        "ele": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.90833333333335,
+          39.68833333333333,
+          0.0
+        ]
+      },
+      "properties": {
+        "name": "D0304 ∈₁f/∈₁₊₂m界线",
+        "point_id": "D0304",
+        "description": "∈₁f/∈₁₊₂m界线",
+        "key": false,
+        "route": "L03 黄院东山梁",
+        "lng": 115.90833333333335,
+        "lat": 39.68833333333333,
+        "ele": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.90833333333335,
+          39.68861111111111,
+          0.0
+        ]
+      },
+      "properties": {
+        "name": "D0305 ∈₁₊₂m/∈₂x界线",
+        "point_id": "D0305",
+        "description": "∈₁₊₂m/∈₂x界线",
+        "key": false,
+        "route": "L03 黄院东山梁",
+        "lng": 115.90833333333335,
+        "lat": 39.68861111111111,
+        "ele": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.90833333333335,
+          39.689166666666665,
+          0.0
+        ]
+      },
+      "properties": {
+        "name": "D0306 ∈₂x/∈₂z界线",
+        "point_id": "D0306",
+        "description": "∈₂x/∈₂z界线",
+        "key": false,
+        "route": "L03 黄院东山梁",
+        "lng": 115.90833333333335,
+        "lat": 39.689166666666665,
+        "ele": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.91000000000001,
+          39.69166666666666,
+          0.0
+        ]
+      },
+      "properties": {
+        "name": "D0307 ∈₂z/∈₂h界线",
+        "point_id": "D0307",
+        "description": "∈₂z/∈₂h界线",
+        "key": false,
+        "route": "L03 黄院东山梁",
+        "lng": 115.91000000000001,
+        "lat": 39.69166666666666,
+        "ele": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.91000000000001,
+          39.69222222222222,
+          0.0
+        ]
+      },
+      "properties": {
+        "name": "D0308 ∈₂h/O₁y界线",
+        "point_id": "D0308",
+        "description": "∈₂h/O₁y界线",
+        "key": false,
+        "route": "L03 黄院东山梁",
+        "lng": 115.91000000000001,
+        "lat": 39.69222222222222,
+        "ele": 0.0
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          115.91027777777778,
+          39.69305555555555,
+          0.0
+        ]
+      },
+      "properties": {
+        "name": "D0309 O₁y/O₁l界线",
+        "point_id": "D0309",
+        "description": "O₁y/O₁l界线",
+        "key": false,
+        "route": "L03 黄院东山梁",
+        "lng": 115.91027777777778,
+        "lat": 39.69305555555555,
+        "ele": 0.0
+      }
+    }
+  ]
+}

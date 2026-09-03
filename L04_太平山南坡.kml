@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>L04 太平山南坡 晚古生代地层观察</name>
+
+  <!-- 路线轨迹 -->
+  <Placemark>
+    <name>L04 路线: 探矿所→太平山南坡→南洛凹→探矿所</name>
+    <Style>
+      <LineStyle>
+        <color>ff0000ff</color>
+        <width>3</width>
+      </LineStyle>
+    </Style>
+    <LineString>
+      <coordinates>
+        115.94417,39.69528,0
+        115.94417,39.69194,0
+        115.94444,39.69250,0
+        115.94500,39.69306,0
+        115.94500,39.69361,0
+      </coordinates>
+    </LineString>
+  </Placemark>
+
+  <!-- ===== D0401 岩性控制点 ===== -->
+  <Placemark>
+    <name>D0401 | O₁m岩性控制点 | 162.9高地</name>
+    <description><![CDATA[
+      <b>点性：</b>马家沟组（O₁m）岩性控制点<br/>
+      <b>点位：</b>太平山南坡162.9高地<br/>
+      <b>看点：</b><br/>
+      · 青灰色厚层块状灰岩<br/>
+      · 古河迹（海拔105-110m，NW-SE，12m×3.5m）<br/>
+      · 岩溶角砾岩（分选差、磨圆差）<br/>
+      <b>注意：</b>往年补充点，指导书无此独立点号
+    ]]></description>
+    <Point><coordinates>115.94417,39.69528,0</coordinates></Point>
+  </Placemark>
+
+  <!-- ===== D0402 平行不整合 ⭐ ===== -->
+  <Placemark>
+    <name>⭐ D0402 | O₁m/C₂b平行不整合 | 162.9高地北鞍部</name>
+    <description><![CDATA[
+      <b>点性：</b>下奥陶统马家沟组（O₁m）与中石炭统本溪组（C₂b）界线<br/>
+      <b>接触关系：</b><b>平行不整合</b>（缺失 O₃+S+D+C₁）<br/>
+      <b>点位：</b>162.9高地北鞍部探槽南端，砍房子东边<br/>
+      <b>点南：</b>O₁m顶部——角砾状灰岩，产状25°∠28°<br/>
+      <b>点北：</b>C₂b底部——硬绿泥石角岩<br/>
+      <b>本溪组四层（下→上）：</b><br/>
+      ① 硬绿泥石角岩+红柱石角岩 10-15m<br/>
+      ② 杂色板岩 15-17m<br/>
+      ③ 唐山灰岩（生物碎屑灰岩，纺锤蜓）0.5-1.9m<br/>
+      ④ 压力影板岩（黄铁矿+石英方解石充填）15-18.5m<br/>
+      <b>拍照：</b>不整合面特写+硬绿泥石角岩+唐山灰岩化石<br/>
+      <b>素描：</b>平行不整合接触关系剖面，标剥蚀面
+    ]]></description>
+    <Style>
+      <IconStyle>
+        <color>ff00ffff</color>
+        <scale>1.3</scale>
+      </IconStyle>
+      <LabelStyle>
+        <color>ff00ffff</color>
+        <scale>1.1</scale>
+      </LabelStyle>
+    </Style>
+    <Point><coordinates>115.94417,39.69194,0</coordinates></Point>
+  </Placemark>
+
+  <!-- ===== D0403 ===== -->
+  <Placemark>
+    <name>D0403 | C₂b/C₃t界线 | 南洛凹南山梁小平台南端</name>
+    <description><![CDATA[
+      <b>点性：</b>本溪组（C₂b）与太原组（C₃t）界线点<br/>
+      <b>接触关系：</b>整合<br/>
+      <b>点南：</b>C₂b顶部灰黄色钙质板岩<br/>
+      <b>点北：</b>C₃t底部变质中细粒岩屑杂砂岩（地貌上形成小陡坎）<br/>
+      <b>太原组三层（下→上）：</b><br/>
+      ① 红柱石角岩+变质砂岩 9-10m<br/>
+      ② 黑色炭质板岩（含植物化石）5-6m<br/>
+      ③ 杂色板岩夹变质石英砂岩（顶部含煤线）18-20m<br/>
+      <b>注意：</b>本溪组4个沉积旋回，每个向上变浅
+    ]]></description>
+    <Point><coordinates>115.94444,39.69250,0</coordinates></Point>
+  </Placemark>
+
+  <!-- ===== D0404 ===== -->
+  <Placemark>
+    <name>D0404 | C₃t/P₁s界线 | 190-195m标高</name>
+    <description><![CDATA[
+      <b>点性：</b>太原组（C₃t）与山西组（P₁s）界线点<br/>
+      <b>接触关系：</b>整合<br/>
+      <b>点南：</b>C₃t顶部深灰色板岩+灰黄色钙质板岩<br/>
+      <b>点北：</b>P₁s底部变质中粗粒岩屑杂砂岩（陡坎）<br/>
+      <b>山西组四层（下→上）：</b><br/>
+      ① 岩屑砂岩（含燧石角砾）~15m<br/>
+      ② 黑色炭质板岩夹煤层 9-10m<br/>
+      ③ 变质砂岩（豆腐块砾石）8-9m<br/>
+      ④ 黑色炭质板岩夹煤线 4-5m<br/>
+      <b>注意：</b>砂岩—板岩—砂岩—板岩韵律，两个沉积旋回
+    ]]></description>
+    <Point><coordinates>115.94500,39.69306,0</coordinates></Point>
+  </Placemark>
+
+  <!-- ===== D0405 ===== -->
+  <Placemark>
+    <name>D0405 | P₁s/P₁y界线 | 215-220m标高</name>
+    <description><![CDATA[
+      <b>点性：</b>山西组（P₁s）与杨家屯组（P₁y）界线点<br/>
+      <b>接触关系：</b>整合<br/>
+      <b>点南：</b>P₁s顶部灰黄色钙质板岩<br/>
+      <b>点北：</b>P₁y底部"豆腐块砂岩"（含砾中粗粒变质岩屑杂砂岩）<br/>
+      <b>杨家屯组：</b><br/>
+      下部：变质角砾岩+含砾岩屑砂岩，<b>斜层理发育</b><br/>
+      上部：灰色砂质板岩，劈理化发育<br/>
+      <b>素描：</b>豆腐块砂岩+斜层理
+    ]]></description>
+    <Point><coordinates>115.94500,39.69361,0</coordinates></Point>
+  </Placemark>
+
+</Document>
+</kml>

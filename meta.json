@@ -1,0 +1,10 @@
+{
+  "name": "geointern-agent",
+  "version": "0.4.0",
+  "description": "野外地质实习助手 — 岩石鉴定、构造判读、沉积相分析、地层识别、观察点数据记录提醒、野簿素描指导、信手剖面/柱状图/赤平投影绘制",
+  "author": "crysis",
+  "created": "2026-07-14",
+  "updated": "2026-07-22",
+  "routes": ["emeishan", "zhoukoudian"],
+  "status": "active"
+}

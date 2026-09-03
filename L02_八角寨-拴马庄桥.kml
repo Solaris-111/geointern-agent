@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+  <name>L02 八角寨—拴马庄桥</name>
+  <description>周口店实习路线2：中元古代地层观察 (2026-07-22)</description>
+
+  <!-- 路线样式 -->
+  <Style id="routeStyle">
+    <LineStyle>
+      <color>ff0000ff</color>
+      <width>3</width>
+    </LineStyle>
+  </Style>
+
+  <Style id="pointStyle">
+    <IconStyle>
+      <scale>1.2</scale>
+      <Icon><href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>1.1</scale>
+      <color>ff000000</color>
+    </LabelStyle>
+  </Style>
+
+  <Style id="keyPointStyle">
+    <IconStyle>
+      <scale>1.4</scale>
+      <Icon><href>http://maps.google.com/mapfiles/kml/paddle/ylw-circle.png</href></Icon>
+    </IconStyle>
+    <LabelStyle>
+      <scale>1.2</scale>
+      <color>ff0000ff</color>
+    </LabelStyle>
+  </Style>
+
+  <!-- 路线轨迹 -->
+  <Placemark>
+    <name>L02 行进路线</name>
+    <styleUrl>#routeStyle</styleUrl>
+    <LineString>
+      <tessellate>1</tessellate>
+      <coordinates>
+        115.877778,39.655278,0
+        115.870556,39.655278,0
+        115.878333,39.655556,0
+        115.882778,39.653056,0
+        115.886111,39.655833,0
+        115.890833,39.655556,0
+        115.899167,39.661389,0
+      </coordinates>
+    </LineString>
+  </Placemark>
+
+  <!-- D0201 -->
+  <Placemark>
+    <name>D0201 雾迷山组(Jxw)</name>
+    <description><![CDATA[
+      <b>点性：</b>岩性控制点 + 构造现象观测点<br/>
+      <b>看点：</b>白云岩/千枚岩ABAB序列、阶梯状正断层(290°∠63°)、鞘褶皱、石香肠构造<br/>
+      <b>素描：</b>图2-1 阶梯状正断层、图2-2 X剪节理<br/>
+      <b>产状已知：</b>断层290°∠63°(×6), 后期305°∠85°, 鞘褶皱Y2面295°∠6°, 石香肠225°∠19°
+    ]]></description>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.876667,39.655278,0</coordinates></Point>
+  </Placemark>
+
+  <!-- D0202 -->
+  <Placemark>
+    <name>D0202 Jxh/Jxw 分界</name>
+    <description><![CDATA[
+      <b>点性：</b>地层分界点（洪水庄组/雾迷山组）<br/>
+      <b>看点：</b>整合接触，灰黄色钙质千枚岩 vs 白云岩<br/>
+      <b>注意：</b>洪水庄组仅15-40m厚！
+    ]]></description>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.870556,39.655278,0</coordinates></Point>
+  </Placemark>
+
+  <!-- D0203 -->
+  <Placemark>
+    <name>D0203 Jxt¹/Jxh 分界 + 交错层理</name>
+    <description><![CDATA[
+      <b>点性：</b>地层分界点 + 沉积构造观察点<br/>
+      <b>看点：</b>板状交错层理(30°∠33°)、鱼骨状交错层理→潮汐环境<br/>
+      <b>素描：</b>图2-3 板状交错层理、图2-4 鱼骨状交错层理<br/>
+      <b>接触：</b>整合，但岩性突变→海平面上升
+    ]]></description>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.878333,39.655556,0</coordinates></Point>
+  </Placemark>
+
+  <!-- D0204 -->
+  <Placemark>
+    <name>D0204 Jxt¹/Jxt² 分界</name>
+    <description><![CDATA[
+      <b>点性：</b>地层分界点（铁岭组一段/二段）<br/>
+      <b>看点：</b>Jxt²白云质灰岩+千枚岩AB层序，明显界面
+    ]]></description>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.882778,39.653056,0</coordinates></Point>
+  </Placemark>
+
+  <!-- D0205 -->
+  <Placemark>
+    <name>D0205 Jxt²/Jxt³ 分界 + 叠层石</name>
+    <description><![CDATA[
+      <b>点性：</b>地层分界点 + 叠层石观察点<br/>
+      <b>看点：</b>四种叠层石类型(Lmm/LH/LH-C/SH-V)<br/>
+      <b>素描：</b>图2-5 叠层石形态<br/>
+      <b>界线：</b>突变，沿走向稳定
+    ]]></description>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.886111,39.655833,0</coordinates></Point>
+  </Placemark>
+
+  <!-- D0206 KEY POINT -->
+  <Placemark>
+    <name>⚠️ D0206 Qbx/Jxt³ 平行不整合</name>
+    <description><![CDATA[
+      <b>点性：</b>地层分界点 — <b>平行不整合（今天最重要！）</b><br/>
+      <b>看点：</b>50-60cm褐铁矿古风化壳 → 芹峪运动证据<br/>
+      <b>素描：</b>图2-6 平行不整合界面剖面（红色斜虚线）<br/>
+      <b>三条证据：</b>①上下产状一致 ②古风化壳 ③地层缺失
+    ]]></description>
+    <styleUrl>#keyPointStyle</styleUrl>
+    <Point><coordinates>115.890833,39.655556,0</coordinates></Point>
+  </Placemark>
+
+  <!-- D0207 -->
+  <Placemark>
+    <name>D0207 Qbc/Qbx 分界</name>
+    <description><![CDATA[
+      <b>点性：</b>地层分界点（长龙山组/下马岭组）<br/>
+      <b>看点：</b>整合接触、冲刷面、石英砂岩（磨圆分选好）<br/>
+      <b>注意：</b>有冲刷面但无古风化壳→不是不整合
+    ]]></description>
+    <styleUrl>#pointStyle</styleUrl>
+    <Point><coordinates>115.899167,39.661389,0</coordinates></Point>
+  </Placemark>
+
+</Document>
+</kml>

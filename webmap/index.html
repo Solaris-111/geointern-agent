@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GeoIntern · 周口店野外路线可视化</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/maplibre-gl@5/dist/maplibre-gl.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="map"></div>
+
+<aside id="panel">
+  <h1>GeoIntern<span>野外地质实习 · 周口店</span></h1>
+
+  <section id="legend">
+    <div class="legend-item"><span class="swatch line"></span>行进路线</div>
+    <div class="legend-item"><span class="swatch point"></span>观察点</div>
+    <div class="legend-item"><span class="swatch keypoint"></span>重点点（不整合/构造）</div>
+  </section>
+
+  <section id="routes-switch">
+    <h2>路线</h2>
+    <div id="route-list"><!-- 由 main.js 动态生成 --></div>
+  </section>
+
+  <p class="foot">底图 © OpenStreetMap contributors · 地形 AWS Terrain Tiles</p>
+</aside>
+
+<script src="https://cdn.jsdelivr.net/npm/maplibre-gl@5/dist/maplibre-gl.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

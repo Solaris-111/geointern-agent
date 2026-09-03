@@ -1,0 +1,133 @@
+:root {
+  --accent: #2f6b4f;
+  --key: #e6a700;
+  --route: #e63946;
+  --panel-bg: rgba(255, 255, 255, 0.96);
+  --text: #1a1a1a;
+  --muted: #8a8a8a;
+  --border: #e5e5e0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  height: 100%;
+  font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+  color: var(--text);
+}
+
+#map {
+  position: absolute;
+  inset: 0;
+}
+
+/* 左侧信息面板 */
+#panel {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 260px;
+  max-height: calc(100% - 32px);
+  overflow-y: auto;
+  background: var(--panel-bg);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  z-index: 10;
+}
+
+#panel h1 {
+  font-size: 17px;
+  font-weight: 650;
+  color: var(--accent);
+  line-height: 1.3;
+  margin-bottom: 4px;
+}
+#panel h1 span {
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+#panel h2 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 14px 0 6px;
+}
+
+#legend { margin-top: 14px; }
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text);
+  margin: 6px 0;
+}
+.swatch {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+.swatch.line { background: var(--route); height: 4px; border-radius: 2px; }
+.swatch.point { background: var(--accent); border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--accent); }
+.swatch.keypoint { background: var(--key); border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px var(--key); }
+
+/* 路线开关 */
+#route-list label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  padding: 5px 0;
+  cursor: pointer;
+}
+#route-list input { accent-color: var(--accent); }
+
+#panel .foot {
+  margin-top: 16px;
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* 弹窗 */
+.popup h3 {
+  font-size: 14px;
+  font-weight: 650;
+  color: var(--accent);
+  margin-bottom: 2px;
+}
+.popup .id {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+.popup .desc {
+  font-size: 13px;
+  color: var(--text);
+  margin: 4px 0 8px;
+  line-height: 1.4;
+}
+.popup table {
+  font-size: 12px;
+  color: var(--muted);
+  border-collapse: collapse;
+}
+.popup td { padding: 1px 6px 1px 0; }
+.popup td:first-child { color: var(--text); }
+
+/* 移动端适配（野外手机看） */
+@media (max-width: 600px) {
+  #panel {
+    width: 200px;
+    padding: 12px;
+    font-size: 12px;
+  }
+}

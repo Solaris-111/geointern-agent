@@ -1,0 +1,10 @@
+DXF saved: d:/geointern-agent/output/fig2-1_section_v2.dxf
+Terrain: 64 points, 0-799 m
+Formations:
+  Jxw at x=0m, dip=16 deg, litho=limestone
+  Jxh at x=120m, dip=20 deg, litho=slate
+  Jxt1 at x=240m, dip=22 deg, litho=dolomite
+  Jxt2 at x=360m, dip=20 deg, litho=limestone
+  Jxt3 at x=479m, dip=20 deg, litho=slate
+  Qbx at x=599m, dip=20 deg, litho=shale
+  Qbc at x=719m, dip=18 deg, litho=conglomerate
