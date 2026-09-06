@@ -1,5 +1,9 @@
 """L03 张夏组 (∈₂z) 信手剖面韵律 — 真实数据"""
 
+import sys
+from pathlib import Path as _Path
+sys.path.insert(0, str(_Path(__file__).resolve().parent.parent / "core"))
+
 import math
 import matplotlib.pyplot as plt
 from matplotlib.patches import Patch

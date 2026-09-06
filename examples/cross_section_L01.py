@@ -1,4 +1,8 @@
 """L01 大砾岩山上坡段 信手剖面图 — 含地层."""
+import sys
+from pathlib import Path as _Path
+sys.path.insert(0, str(_Path(__file__).resolve().parent.parent / "core"))
+
 import csv, math
 import numpy as np
 import matplotlib

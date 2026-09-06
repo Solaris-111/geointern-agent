@@ -114,3 +114,13 @@ output/L03_prep/
 
 # === 野簿预稿 — 保留框架模板，实际填了数据的除外 ===
 *.bak
+
+# === 过程垃圾脚本（临时调试 / 版本迭代 / 修复脚本）===
+# _ 开头的一律是调试中间产物
+_*
+*_backup.py
+separate_*_v2.py
+separate_*_v3.py
+separate_v4_buffer.py
+fix_*.py
+sketch_pencil_v2.py

@@ -1,4 +1,8 @@
 """L08 太平山向斜中段北翼 信手构造地层剖面图."""
+import sys
+from pathlib import Path as _Path
+sys.path.insert(0, str(_Path(__file__).resolve().parent.parent / "core"))
+
 from section_config import (SectionConfig, FormationConfig, ContactConfig,
                             FeatureConfig)
 from section_engine import SectionEngine

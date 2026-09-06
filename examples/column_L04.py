@@ -1,6 +1,10 @@
 """L04 太平山南坡 综合地层柱状图 — O₁m→P₁y 上古生界完整序列.
 数据来源: 往年周口店报告附图III 实测剖面逐层厚度数据.
 """
+import sys
+from pathlib import Path as _Path
+sys.path.insert(0, str(_Path(__file__).resolve().parent.parent / "core"))
+
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 import numpy as np

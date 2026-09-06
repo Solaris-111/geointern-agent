@@ -1,5 +1,9 @@
 """地层韵律柱状图 — for 循环驱动旋回重复."""
 
+import sys
+from pathlib import Path as _Path
+sys.path.insert(0, str(_Path(__file__).resolve().parent.parent / "core"))
+
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
 from geo_plotting import setup_chinese_font, LITHOLOGY, save_figure

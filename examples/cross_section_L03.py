@@ -1,4 +1,8 @@
 """L03 黄院东山梁 信手剖面图 — 裁剪版，从D0302景儿峪组开始."""
+import sys
+from pathlib import Path as _Path
+sys.path.insert(0, str(_Path(__file__).resolve().parent.parent / "core"))
+
 from section_config import (SectionConfig, FormationConfig, ContactConfig,
                             FeatureConfig, RhythmLayer)
 from section_engine import SectionEngine

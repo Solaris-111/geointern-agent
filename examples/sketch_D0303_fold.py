@@ -1,5 +1,9 @@
 """D0303 景儿峪组钙质板岩平卧褶皱 — 规范地质素描"""
 
+import sys
+from pathlib import Path as _Path
+sys.path.insert(0, str(_Path(__file__).resolve().parent.parent / "core"))
+
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
