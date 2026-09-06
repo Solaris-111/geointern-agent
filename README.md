@@ -179,4 +179,4 @@ python examples/cross_section_L04.py   # 示例：L04 路线信手剖面
 
 ## License
 
-[TODO：还没定，MIT / GPL / 其他待选]
+[MIT](LICENSE) © 2026 Solaris-111
