@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GeoIntern-Agent</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
 <style>
   :root {
     --bg: #f7f7f5;
@@ -97,6 +98,24 @@
     flex-shrink: 0;
   }
   #send:disabled { opacity: 0.5; cursor: not-allowed; }
+  /* markdown 渲染样式 */
+  .bubble table { border-collapse: collapse; margin: 8px 0; width: 100%; display: block; overflow-x: auto; }
+  .bubble table th, .bubble table td { border: 1px solid var(--border); padding: 6px 10px; text-align: left; font-size: 14px; }
+  .bubble table th { background: #f0f0ee; font-weight: 650; }
+  .bubble h1, .bubble h2, .bubble h3, .bubble h4 { margin: 12px 0 6px; font-weight: 650; line-height: 1.4; }
+  .bubble h1 { font-size: 19px; } .bubble h2 { font-size: 17px; } .bubble h3 { font-size: 16px; } .bubble h4 { font-size: 15px; }
+  .bubble strong { font-weight: 650; }
+  .bubble code { background: #f0f0ee; padding: 1px 5px; border-radius: 4px; font-size: 13px; font-family: "SF Mono", Consolas, monospace; }
+  .bubble pre { background: #f5f5f3; padding: 10px 12px; border-radius: 8px; overflow-x: auto; margin: 8px 0; }
+  .bubble pre code { background: none; padding: 0; }
+  .bubble ul, .bubble ol { padding-left: 22px; margin: 6px 0; }
+  .bubble li { margin: 3px 0; }
+  .bubble p { margin: 6px 0; }
+  .bubble blockquote { border-left: 3px solid var(--accent); padding-left: 10px; color: var(--muted); margin: 8px 0; }
+  .bubble hr { border: none; border-top: 1px solid var(--border); margin: 12px 0; }
+  #img-btn { background: var(--panel); border: 1px solid var(--border); border-radius: 10px; width: 52px; height: 52px; font-size: 16px; cursor: pointer; flex-shrink: 0; color: var(--accent); }
+  #img-bar { display: flex; align-items: center; gap: 10px; padding: 0 24px 8px; background: var(--bg); }
+  #img-clear { background: none; border: 1px solid var(--border); border-radius: 6px; padding: 4px 12px; cursor: pointer; color: var(--muted); font-size: 13px; }
 </style>
 </head>
 <body>
@@ -105,7 +124,13 @@
   <span>野外地质实习助手</span>
 </header>
 <div id="messages"></div>
+<div id="img-bar" style="display:none">
+  <img id="img-thumb" style="max-height:90px; border-radius:8px; border:1px solid var(--border);">
+  <button id="img-clear">移除图片</button>
+</div>
 <div id="input-area">
+  <button id="img-btn" title="上传图片">图</button>
+  <input type="file" id="img-input" accept="image/*" style="display:none">
   <textarea id="input" placeholder="问点什么：这块是白云岩还是灰岩？" rows="2"></textarea>
   <button id="send">发送</button>
 </div>
@@ -114,6 +139,60 @@
   const inputEl = document.getElementById('input');
   const sendEl = document.getElementById('send');
   let history = [];
+  let currentImage = null;
+
+  const imgBtn = document.getElementById('img-btn');
+  const imgInput = document.getElementById('img-input');
+  const imgBar = document.getElementById('img-bar');
+  const imgThumb = document.getElementById('img-thumb');
+  const imgClear = document.getElementById('img-clear');
+
+  imgBtn.addEventListener('click', () => imgInput.click());
+  imgInput.addEventListener('change', () => {
+    const file = imgInput.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      const img = new Image();
+      img.onload = () => {
+        // 压缩：最长边 1024px，转 JPEG 质量 0.75，控制在 ~200KB
+        const MAX = 1024;
+        let w = img.width, h = img.height;
+        if (w > MAX || h > MAX) {
+          const s = MAX / Math.max(w, h);
+          w = Math.round(w * s);
+          h = Math.round(h * s);
+        }
+        const canvas = document.createElement('canvas');
+        canvas.width = w;
+        canvas.height = h;
+        canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+        currentImage = canvas.toDataURL('image/jpeg', 0.75);
+        imgThumb.src = currentImage;
+        imgBar.style.display = 'flex';
+      };
+      img.onerror = () => {
+        // 浏览器解不了码（如 HEIC），退回原图
+        currentImage = reader.result;
+        imgThumb.src = currentImage;
+        imgBar.style.display = 'flex';
+      };
+      img.src = reader.result;
+    };
+    reader.readAsDataURL(file);
+  });
+  imgClear.addEventListener('click', () => {
+    currentImage = null;
+    imgInput.value = '';
+    imgBar.style.display = 'none';
+  });
+
+  function renderMarkdown(text) {
+    if (typeof marked !== 'undefined' && marked.parse) {
+      return marked.parse(text);
+    }
+    return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
 
   function addMsg(role, label) {
     const div = document.createElement('div');
@@ -126,12 +205,29 @@
 
   function send() {
     const text = inputEl.value.trim();
-    if (!text) return;
+    if (!text && !currentImage) return;
     const userBubble = addMsg('user', '你');
-    userBubble.textContent = text;
+    if (currentImage) {
+      const img = document.createElement('img');
+      img.src = currentImage;
+      img.style.maxWidth = '200px';
+      img.style.borderRadius = '8px';
+      img.style.display = 'block';
+      img.style.marginBottom = '6px';
+      userBubble.appendChild(img);
+    }
+    if (text) {
+      const span = document.createElement('span');
+      span.textContent = text;
+      userBubble.appendChild(span);
+    }
     history.push({ role: 'user', content: text });
     inputEl.value = '';
     sendEl.disabled = true;
+    const payloadImages = currentImage ? [currentImage] : [];
+    currentImage = null;
+    imgInput.value = '';
+    imgBar.style.display = 'none';
 
     const aiBubble = addMsg('ai', 'GeoIntern');
     const cursor = document.createElement('span');
@@ -141,7 +237,7 @@
     fetch('/chat', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ messages: history })
+      body: JSON.stringify({ messages: history, images: payloadImages })
     }).then(async (resp) => {
       const reader = resp.body.getReader();
       const decoder = new TextDecoder();
@@ -162,7 +258,7 @@
             const obj = JSON.parse(data);
             if (obj.content) {
               full += obj.content;
-              aiBubble.textContent = full;
+              aiBubble.innerHTML = renderMarkdown(full);
               aiBubble.appendChild(cursor);
               messagesEl.scrollTop = messagesEl.scrollHeight;
             }
